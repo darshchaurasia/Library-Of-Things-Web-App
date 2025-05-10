@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item>
+    <Id>2</Id>
+    <Name>Drill</Name>
+    <IsBorrowed>true</IsBorrowed>
+    <BorrowedBy>TA</BorrowedBy>
+    <DueDate>2025-05-05</DueDate>
+  </Item>
+  <Item>
+    <Id>3</Id>
+    <Name>Water</Name>
+    <IsBorrowed>true</IsBorrowed>
+    <BorrowedBy>TA</BorrowedBy>
+    <DueDate>2025-04-03</DueDate>
+  </Item>
+  <Item>
+    <Id>4</Id>
+    <Name>Potato</Name>
+    <IsBorrowed>true</IsBorrowed>
+    <BorrowedBy>TA</BorrowedBy>
+    <DueDate>2025-05-15</DueDate>
+  </Item>
+  <Item>
+    <Id>5</Id>
+    <Name>Darsh Magnet</Name>
+    <IsBorrowed>false</IsBorrowed>
+    <BorrowedBy></BorrowedBy>
+    <DueDate></DueDate>
+  </Item>
+  <Item>
+    <Id>7</Id>
+    <Name>HDMI Cable</Name>
+    <IsBorrowed>true</IsBorrowed>
+    <BorrowedBy>TA</BorrowedBy>
+    <DueDate>2025-05-18</DueDate>
+  </Item>
+  <Item>
+    <Id>8</Id>
+    <Name>Electric Drill</Name>
+    <IsBorrowed>false</IsBorrowed>
+    <BorrowedBy></BorrowedBy>
+    <DueDate></DueDate>
+  </Item>
+  <Item>
+    <Id>9</Id>
+    <Name>Phone Charger</Name>
+    <IsBorrowed>false</IsBorrowed>
+    <BorrowedBy></BorrowedBy>
+    <DueDate></DueDate>
+  </Item>
+</Items>

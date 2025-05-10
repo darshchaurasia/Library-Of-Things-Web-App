@@ -1,0 +1,318 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{882AD2F6-4CBB-4FC2-A356-8064C4CA9290}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TinyLibraryWeb_M3</RootNamespace>
+    <AssemblyName>TinyLibraryWeb_M3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <LangVersion>8.0</LangVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Accounts.xml" />
+    <Content Include="App_Data\Items.xml" />
+    <Content Include="App_Themes\dark\style.css" />
+    <Content Include="App_Themes\light\style.css" />
+    <None Include="Connected Services\LoanRef\LoanService1.wsdl" />
+    <None Include="Connected Services\LoanRef\LoanService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LoanRef\LoanService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LoanRef\LoanService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LoanRef\configuration91.svcinfo" />
+    <None Include="Connected Services\LoanRef\configuration.svcinfo" />
+    <None Include="Connected Services\LoanRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ScheduleRef\ScheduleService.wsdl" />
+    <None Include="Connected Services\ScheduleRef\ScheduleService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ScheduleRef\ScheduleService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SearchRef\configuration91.svcinfo" />
+    <None Include="Connected Services\SearchRef\configuration.svcinfo" />
+    <None Include="Connected Services\SearchRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Cart.aspx" />
+    <None Include="Connected Services\LoanRef\LoanService1.disco" />
+    <None Include="Connected Services\SearchRef\SearchService1.disco" />
+    <None Include="Connected Services\ScheduleRef\ScheduleService.disco" />
+    <None Include="Connected Services\ScheduleRef\configuration91.svcinfo" />
+    <None Include="Connected Services\ScheduleRef\configuration.svcinfo" />
+    <None Include="Connected Services\ScheduleRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Controls\LoginPanel.ascx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Member.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Services\LoanService.svc" />
+    <Content Include="Services\ScheduleService.svc" />
+    <Content Include="Services\SearchService.svc" />
+    <Content Include="Staff.aspx" />
+    <Content Include="TryIt_Schedule.aspx" />
+    <Content Include="TryIt_Cart.aspx" />
+    <Content Include="TryIt_Loan.aspx" />
+    <Content Include="TryIt_Login.aspx" />
+    <Content Include="TryIt_Search.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\LoanRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ScheduleRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SearchRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Captcha.ashx.cs">
+      <DependentUpon>Captcha.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoginPanel.ascx.cs">
+      <DependentUpon>LoginPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\LoginPanel.ascx.designer.cs">
+      <DependentUpon>LoginPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AuthHelper.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member.aspx.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member.aspx.designer.cs">
+      <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Item.cs" />
+    <Compile Include="Models\ItemRepository.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ILoanService.cs" />
+    <Compile Include="Services\IScheduleService.cs" />
+    <Compile Include="Services\ISearchService.cs" />
+    <Compile Include="Services\LoanItemDTO.cs" />
+    <Compile Include="Services\LoanService.svc.cs">
+      <DependentUpon>LoanService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ScheduleService.svc.cs">
+      <DependentUpon>ScheduleService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SearchService.svc.cs">
+      <DependentUpon>SearchService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryIt_Schedule.aspx.cs">
+      <DependentUpon>TryIt_Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryIt_Schedule.aspx.designer.cs">
+      <DependentUpon>TryIt_Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryIt_Cart.aspx.cs">
+      <DependentUpon>TryIt_Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryIt_Cart.aspx.designer.cs">
+      <DependentUpon>TryIt_Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryIt_Loan.aspx.cs">
+      <DependentUpon>TryIt_Loan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryIt_Loan.aspx.designer.cs">
+      <DependentUpon>TryIt_Loan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryIt_Login.aspx.cs">
+      <DependentUpon>TryIt_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryIt_Login.aspx.designer.cs">
+      <DependentUpon>TryIt_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryIt_Search.aspx.cs">
+      <DependentUpon>TryIt_Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryIt_Search.aspx.designer.cs">
+      <DependentUpon>TryIt_Search.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handlers\Captcha.ashx" />
+    <Content Include="Connected Services\SearchRef\TinyLibraryWeb_M3.SearchRef.Item.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\SearchRef\SearchService1.wsdl" />
+    <None Include="Connected Services\SearchRef\SearchService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SearchRef\SearchService31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SearchRef\SearchService32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\LoanRef\" />
+    <WCFMetadataStorage Include="Connected Services\ScheduleRef\" />
+    <WCFMetadataStorage Include="Connected Services\SearchRef\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FeeCalcLibrary\FeeCalcLibrary.csproj">
+      <Project>{e2cc2b23-c470-4684-a5d1-2f1df1aae89b}</Project>
+      <Name>FeeCalcLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

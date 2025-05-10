@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Users>
+  <User name="TA" pwdHash="d85b22f0890f5e82d76967037156f2a0bf779bcd44123bd5a2fa7ab299a289d6" role="staff" lastLogin="2025-05-10T04:23:37.0099209-07:00" />
+  <User name="test" pwdHash="9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08" role="member" lastLogin="2025-04-27T05:17:03.5711302-07:00" />
+  <User name="NewUser" pwdHash="4ddfbae5f178979b57b12b87f726942ec3b3e1ae65e1bec93feb07a83ee10c4a" role="member" lastLogin="" />
+  <User name="NewUser2" pwdHash="e129938055a58e19e59b9de475bd18f0782db1dee80f0d8e7dc8f80bc511176b" role="staff" lastLogin="2025-04-27T17:07:09.6695511-07:00" />
+</Users>

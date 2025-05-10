@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TinyLibraryWeb_M3.Services" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TinyLibraryWeb_M3.Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLoanItemDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LoanItemDTO" nillable="true" type="tns:LoanItemDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLoanItemDTO" nillable="true" type="tns:ArrayOfLoanItemDTO" />
+  <xs:complexType name="LoanItemDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DueDate" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoanItemDTO" nillable="true" type="tns:LoanItemDTO" />
+</xs:schema>

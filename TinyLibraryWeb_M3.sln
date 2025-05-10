@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyLibraryWeb_M3", "TinyLibraryWeb_M3\TinyLibraryWeb_M3.csproj", "{882AD2F6-4CBB-4FC2-A356-8064C4CA9290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeeCalcLibrary", "FeeCalcLibrary\FeeCalcLibrary.csproj", "{E2CC2B23-C470-4684-A5D1-2F1DF1AAE89B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{882AD2F6-4CBB-4FC2-A356-8064C4CA9290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882AD2F6-4CBB-4FC2-A356-8064C4CA9290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882AD2F6-4CBB-4FC2-A356-8064C4CA9290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{882AD2F6-4CBB-4FC2-A356-8064C4CA9290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2CC2B23-C470-4684-A5D1-2F1DF1AAE89B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2CC2B23-C470-4684-A5D1-2F1DF1AAE89B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2CC2B23-C470-4684-A5D1-2F1DF1AAE89B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2CC2B23-C470-4684-A5D1-2F1DF1AAE89B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

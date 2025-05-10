@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="TinyLibraryWeb_M3.Services.LoanService" CodeBehind="LoanService.svc.cs" %>

@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TinyLibraryWeb_M3.Site" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+  <meta charset="utf-8" />
+  <title><asp:ContentPlaceHolder ID="title" runat="server">Library Of Things</asp:ContentPlaceHolder></title>
+  <link id="themeCss" runat="server" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <form runat="server">
+    <div style="padding:10px; background:#727278; border-bottom:1px solid #ccc;">
+      <span style="font-weight:bold; font-size:1.2em;">Library Of Things</span>
+      <asp:Label   ID="litUser" runat="server" EnableViewState="false"
+     Style="margin-left:20px; color:green;" />
+
+      <asp:HyperLink ID="hlMember" runat="server" NavigateUrl="Member.aspx"
+        Style="margin-left:30px;">Member</asp:HyperLink>
+      <asp:HyperLink ID="hlStaff" runat="server" NavigateUrl="Staff.aspx"
+        Style="margin-left:10px;">Staff</asp:HyperLink>
+
+      <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click"
+        Style="float:right; margin-left:10px;">Logout</asp:LinkButton>
+      <asp:LinkButton ID="lnkLogin" runat="server" PostBackUrl="Login.aspx"
+        Style="float:right;">Login</asp:LinkButton>
+
+      <asp:DropDownList ID="ddlTheme" runat="server" AutoPostBack="true"
+          OnSelectedIndexChanged="ddlTheme_SelectedIndexChanged"
+          Style="float:right; margin-right:20px;">
+        <asp:ListItem Value="light">Light</asp:ListItem>
+        <asp:ListItem Value="dark">Dark</asp:ListItem>
+      </asp:DropDownList>
+    </div>
+
+    <div style="padding:20px;">
+      <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </div>
+  </form>
+</body>
+</html>
