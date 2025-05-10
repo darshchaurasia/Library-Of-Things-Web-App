@@ -46,4 +46,48 @@ A service-oriented ASP .NET Web Application that lets community members borrow e
    git clone https://github.com/darshchaurasia/Library-Of-Things-Web-App
    cd LibraryOfThings
 
+---
+
+## Project Structure
+
+/App_Themes/
+  /light/…         ← CSS for light mode
+  /dark/…          ← CSS for dark mode
+
+/Controls/
+  LoginPanel.ascx  ← login + CAPTCHA + “Remember Me” control
+
+/Handlers/
+  Captcha.ashx     ← generates CAPTCHA image
+
+/Services/
+  ScheduleService.svc
+  LoanService.svc
+  SearchService.svc
+
+/Models/
+  Item.cs
+  ItemRepository.cs
+
+/Helpers/
+  AuthHelper.cs    ← register/validate/promote/demote/delete users
+
+/App_Data/
+  Accounts.xml     ← user store
+  Items.xml        ← inventory store
+  ErrorLog.xml     ← (optional) global error log
+
+/TryIt_*.aspx      ← pages to test each component/service
+
+Default.aspx       ← landing + service directory  
+Member.aspx        ← member dashboard  
+Staff.aspx         ← staff dashboard  
+Cart.aspx          ← session-state cart checkout  
+Register.aspx      ← user registration  
+Login.aspx         ← login page  
+
+Global.asax        ← global event handlers  
+
+FeeCalcLibrary/    ← DLL with ComputeLateFee & HashPassword
+
 
